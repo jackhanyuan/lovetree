@@ -13,4 +13,4 @@ def love():
 
 # --host=0.0.0.0 --port=5000    表明任意ip可以访问服务器，端口号为5000
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=52013, debug=True)
+    app.run(host="0.0.0.0", port=1314, debug=True)

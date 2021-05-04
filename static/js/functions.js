@@ -1,5 +1,6 @@
 /*
- * http://love.hackerzhou.me
+ * https://like.wdidc.net/
+ * https://love.wdidc.net/
  */
 
 // variables
