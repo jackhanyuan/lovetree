@@ -23,10 +23,8 @@
 </head>
 <body>
 	<!--===音乐：一次就好——杨宗纬======================================-->
-	<audio autoplay loop="loop">
-			<source src="../static/music/JustOnce.m4a"/>
-	</audio>  
-	
+	<audio id="music" autoplay="autoplay"  loop="loop" preload="auto" src="../static/music/JustOnce.m4a"> </audio>  
+
 	<!--==============================================================-->
 	<div id="main">
         <div id="error">
@@ -220,6 +218,21 @@
 	    })();
 	    
     </script>
+	
+	<script type="text/javascript">
+		window.onload = function(){
+				 setInterval("toggleSound()",100);
+			}
+
+		function toggleSound() {
+					var music = document.getElementById("music");//获取ID  
+						
+					if (music.paused) { //判读是否播放  
+						music.paused=false;
+						music.play(); //没有就播放 
+					}    
+			}
+	</script>
 
 	<!--=======附属说明====================================================-->
 <!--	<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">-->
